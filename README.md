@@ -1,6 +1,6 @@
 # Testing Assessment
 
-This README file contains the instructions you should follow to successfully complete the Testing Practice.
+This README file contains the instructions you should follow to successfully complete the Testing Assessment.
 
 In this github repository, you’ll find 3 python files: string_functions.py, example_test.py, and 
 Test.py. 
