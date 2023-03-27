@@ -1,17 +1,24 @@
 import unittest
-from string_functions import *
 
-class TestToUpper(unittest.TestCase):
-    # write your code here
-    pass
+class TestStringFunctions(unittest.TestCase):
 
-class TestToLower(unittest.TestCase):
-    # Write you code here
-    pass
+    def TestToUpper(self):
+        self.assertEqual(to_upper("hello"), "HELLO")
+        self.assertEqual(to_upper("WORLD"), "WORLD")
+        self.assertEqual(to_upper("123"), "123")
+        self.assertEqual(to_upper(""), "")
 
-class TestCapitalize(unittest.TestCase):
-    # Write your code here
-    pass
+    def TestToLower(self):
+        self.assertEqual(to_lower("hello"), "hello")
+        self.assertEqual(to_lower("WORLD"), "world")
+        self.assertEqual(to_lower("123"), "123")
+        self.assertEqual(to_lower(""), "")
 
-if __name__ == '__main__':
+    def TestCapitalize(self):
+        self.assertEqual(capitalize("hello world"), "Hello world")
+        self.assertEqual(capitalize("WORLD"), "World")
+        self.assertEqual(capitalize("123"), "123")
+        self.assertEqual(capitalize(""), "")
+
+if name == 'main':
     unittest.main()
